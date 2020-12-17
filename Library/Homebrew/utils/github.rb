@@ -19,7 +19,7 @@ module GitHub
   API_MAX_ITEMS = 5000
 
   CREATE_GIST_SCOPES = ["gist"].freeze
-  CREATE_ISSUE_FORK_OR_PR_SCOPES = ["public_repo"].freeze
+  CREATE_ISSUE_FORK_OR_PR_SCOPES = ["public_repo", "workflow"].freeze
   ALL_SCOPES = (CREATE_GIST_SCOPES + CREATE_ISSUE_FORK_OR_PR_SCOPES).freeze
   ALL_SCOPES_URL = Formatter.url(
     "https://github.com/settings/tokens/new?scopes=#{ALL_SCOPES.join(",")}&description=Homebrew",
