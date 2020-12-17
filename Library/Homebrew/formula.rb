@@ -2254,10 +2254,10 @@ class Formula
     # @!attribute [w] license
     # The SPDX ID of the open-source license that the formula uses.
     # Shows when running `brew info`.
-    # Use `:any_of`, `:all_of` or `:with` to describe complex license expressions.
-    # `:any_of` should be used when the user can choose which license to use.
-    # `:all_of` should be used when the user must use all licenses.
-    # `:with` should be used to specify a valid SPDX exception.
+    # Use `any_of:`, `all_of:` or `with:` to describe complex license expressions.
+    # `any_of:` should be used when the user can choose which license to use.
+    # `all_of:` should be used when the user must use all licenses.
+    # `with:` should be used to specify a valid SPDX exception.
     # Add `+` to an identifier to indicate that the formulae can be
     # licensed under later versions of the same license.
     # @see https://docs.brew.sh/License-Guidelines Homebrew License Guidelines

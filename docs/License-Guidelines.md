@@ -44,19 +44,19 @@ license "LGPL-2.1-only"
 license "GPL-1.0-or-later"
 ```
 
-Use `:any_of` to indicate that the user can choose which license applies:
+Use `any_of:` to indicate that the user can choose which license applies:
 
 ```ruby
 license any_of: ["MIT", "0BSD"]
 ```
 
-Use `:all_of` to indicate that the user must comply with multiple licenses:
+Use `all_of:` to indicate that the user must comply with multiple licenses:
 
 ```ruby
 license all_of: ["MIT", "0BSD"]
 ```
 
-Use `:with` to indicate a license exception:
+Use `with:` to indicate a license exception:
 
 ```ruby
 license "MIT" => { with: "LLVM-exception" }

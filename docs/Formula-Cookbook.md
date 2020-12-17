@@ -95,7 +95,7 @@ We only accept formulae that use a [Debian Free Software Guidelines license](htt
 
 Use the license identifier from the [SPDX License List](https://spdx.org/licenses/) e.g. `license "BSD-2-Clause"`, or use `license :public_domain` for public domain software.
 
-Use `:any_of`, `:all_of` or `:with` to describe complex license expressions. `:any_of` should be used when the user can choose which license to use. `:all_of` should be used when the user must use all licenses. `:with` should be used to specify a valid SPDX exception. Add `+` to an identifier to indicate that the formulae can be licensed under later versions of the same license.
+Use `any_of:`, `all_of:` or `with:` to describe complex license expressions. `any_of:` should be used when the user can choose which license to use. `all_of:` should be used when the user must use all licenses. `with:` should be used to specify a valid SPDX exception. Add `+` to an identifier to indicate that the formulae can be licensed under later versions of the same license.
 
 Check out the [License Guidelines](License-Guidelines.md) for examples of complex license expressions in Homebrew formulae.
 
